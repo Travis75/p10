@@ -1,24 +1,33 @@
-$(".submit").on('click', function(e) {
+$(document).ready(function() {
+    $(".submit").on('click', function(e) {
 
-  e.preventDefault();
-  var picture_to_poetify = $('form').find('input').val();
-  $.ajax({
-    url: "https://sender.blockspring.com/api_v1/blocks/1751dda528c435200664e90be095bd04?api_key=13c886b0f3230d42fc7998a125f3dcc4",
-    type: "POST",
-    data: {image_url: picture_to_poetify},
-    crossDomain: true
-  }).done(function(response){
-    var word_ary = response.results
-    console.log(word_ary)
+    e.preventDefault();
+    var picture_to_tag = $('form').find('input').val();
     $.ajax({
-      url: '/haiku',
+      url: "/image_tag",
       type: "GET",
-      data: {words: word_ary}
+      data: {image_url: picture_to_tag}
     }).done(function(data){
       console.log(data)
+        $('#user_photo').css('background-image', 'url' + '(' + picture_to_tag + ')')
+        .animate({'margin-top': '0%'}, 1000);
+      $.each(data, function(index, value){
+        $("#text").append('<span>' + value.join(' ') + '</span><br>')
+      });
     });
   });
+})
+
+var showText = function (target, message, index, interval) {
+  if (index < message.length) {
+    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
+
+$(function () {
+
+  showText("#msg", "Hello, World!", 0, 500);
 
 });
-
 

@@ -1,3 +1,48 @@
 form {
   color: red;
+  text-align: center;
+}
+.spacer {
+  height: 5%;
+  width: 100%;
+}
+
+#holder {
+  background: ;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#user_photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30%;
+  width: 30%;
+}
+
+#poem {
+  float: left;
+  background-color: green;
+  height: 50%;
+  width: 100%;
+}
+
+#text {
+  margin: 3% auto;
+  text-align: center;
+  height: 70%;
+  width:90%;
+  background-color: purple;
+}
+
+span {
+  font-size: 300%;
+}
+
+body {
+  margin: 0 0;
 }

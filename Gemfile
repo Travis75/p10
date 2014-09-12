@@ -18,7 +18,7 @@ gem 'rake'
 gem 'debugger'
 gem 'shotgun'
 gem 'faker'
-
+gem 'httparty'
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
