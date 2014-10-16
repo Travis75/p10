@@ -1,18 +1,35 @@
+/*body {
+  margin: 0 0;
+  background-color:gray;
+}
+
+#holder {
+  background-image: url('http://www.blackbambu.com/wp-content/uploads/2011/02/texture-4.1.jpg');
+  height: 100%;
+  width: 50%;
+  margin-left:25%;
+  margin-top:2%;
+  margin-bottom: 2%;
+  box-shadow: 10px 10px 4px 0px #000000;
+}
+
 form {
-  color: red;
   text-align: center;
 }
+
+h2 {
+  padding-top: 2%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Tangerine', cursive;
+  margin: 0 0;
+}
+
 .spacer {
   height: 5%;
   width: 100%;
 }
 
-#holder {
-  background: ;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
 
 #user_photo {
   background-size: cover;
@@ -22,11 +39,11 @@ form {
   margin-right: auto;
   height: 30%;
   width: 30%;
+  border-radius: 50%;
 }
 
 #poem {
   float: left;
-  background-color: green;
   height: 50%;
   width: 100%;
 }
@@ -36,13 +53,39 @@ form {
   text-align: center;
   height: 70%;
   width:90%;
-  background-color: purple;
 }
 
 span {
+  font-family: 'Tangerine', cursive;
+  font-size: 300%;
+}*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: blue;
+}
+
+#holder {
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    background-color: gray;
+}
+
+#form {
+  text-align: center;
+  height: 25%;
+  width: 100%;
+}
+
+#form h2 {
+  font-family: 'Tangerine', cursive;
   font-size: 300%;
 }
 
-body {
-  margin: 0 0;
+#paper {
+    height: 75%;
+    width: 100%;
+    background-color: purple;
 }

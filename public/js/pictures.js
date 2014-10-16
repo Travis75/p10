@@ -9,25 +9,20 @@ $(document).ready(function() {
       data: {image_url: picture_to_tag}
     }).done(function(data){
       console.log(data)
-        $('#user_photo').css('background-image', 'url' + '(' + picture_to_tag + ')')
-        .animate({'margin-top': '0%'}, 1000);
+        $('#user_photo').css('background-image', 'url' + '(' + picture_to_tag + ')');
       $.each(data, function(index, value){
-        $("#text").append('<span>' + value.join(' ') + '</span><br>')
+        console.log(value)
+        $("#text").append('<span></span><br>')
+        pMessage('#text span', value.join(' ').split(''))
       });
     });
   });
 })
 
-var showText = function (target, message, index, interval) {
-  if (index < message.length) {
-    $(target).append(message[index++]);
-    setTimeout(function () { showText(target, message, index, interval); }, interval);
+
+function pMessage(target,text){
+  var jTarget = $(target).last();
+  for (var i = 0; i < text.length; i++) {
+      jTarget.append(text[i])
   }
 }
-
-$(function () {
-
-  showText("#msg", "Hello, World!", 0, 500);
-
-});
-
