@@ -13,7 +13,6 @@ def seed_db
         count += 1
       end
     end
-    # p [holder, count + 1]
     Word.create(word: holder, syl: count + 1)
   end
 end

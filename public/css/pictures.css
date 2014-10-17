@@ -1,3 +1,131 @@
+/*body {
+  margin: 0 0;
+  background-color:gray;
+}
+
+#holder {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  margin-left:25%;
+  margin-top:2%;
+  box-shadow: 5px 5px 2px 0px #000000;
+}
+
 form {
-  color: red;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Tangerine', cursive;
+  margin: 0 0;
+}
+
+.spacer {
+  height: 5%;
+  width: 100%;
+}
+
+
+#user_photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+#poem {
+  float: left;
+  height: 50%;
+  width: 100%;
+}
+
+#text {
+  margin: 3% auto;
+  text-align: center;
+  height: 70%;
+  width:90%;
+}
+
+span {
+  font-family: 'Tangerine', cursive;
+  font-size: 300%;
+}*/
+
+body{
+  background-image: url("../images/swirl_pattern.png");
+}
+
+#user-photo img{
+  margin-top: 2%;
+  margin-bottom:4%;
+  border: 10px solid black;
+  max-height: 250px;
+}
+
+#user-photo {
+  opacity: 0;
+}
+
+#text {
+  opacity: 0;
+}
+
+#holder {
+  font-family: 'Josefin Slab', serif;
+  height: 100%;
+  width: 50%;
+  margin-top: -5%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+#title-holder {
+  padding-top: 3%;
+  width:25%;
+}
+
+input {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  color: white;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+#user-input {
+  border: 0px solid;
+}
+
+
+h2 {
+  font-family: 'Josefin Slab', serif;
+  -webkit-transform: rotate(-15deg);
+  text-align: center;
+   color: white;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+#poem {
+  box-shadow: 5px 5px 20px 2px #000000;
+  height: 50em;
+  width: 100%;
+  margin-top: 10%;
+  background-image: url("http://www.blackbambu.com/wp-content/uploads/2011/02/texture-4.1.jpg");
+}
+
+span {
+  margin-top: 4%;
+  font-size: 200%;
 }
