@@ -15,18 +15,18 @@ gem 'activesupport'
 gem 'activerecord'
 
 gem 'rake'
-gem 'debugger'
+# gem 'debugger'
 gem 'shotgun'
 gem 'faker'
 gem 'httparty'
-group :test do
-  gem 'shoulda-matchers'
-  gem 'rack-test'
-  gem 'rspec'
-  gem 'capybara'
-end
+# group :test do
+#   gem 'shoulda-matchers'
+#   gem 'rack-test'
+#   gem 'rspec'
+#   gem 'capybara'
+# end
 
-group :test, :development do
-  gem 'factory_girl'
-  gem 'faker'
+# group :test, :development do
+#   gem 'factory_girl'
+#   gem 'faker'
 end
