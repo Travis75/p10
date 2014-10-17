@@ -8,12 +8,11 @@ $(document).ready(function() {
       type: "GET",
       data: {image_url: picture_to_tag}
     }).done(function(data){
-      console.log(data)
-        $('#user-photo').append("<img src =" + picture_to_tag + ">")
+      $("#text").empty()
+        $('#user-photo').empty().append("<img src =" + picture_to_tag + ">")
       $.each(data, function(index, value){
-        console.log(value)
         $("#text").append('<span></span><br>')
-        pMessage('#text span', value.join(' ').split(''))
+        addInHaikuText('#text span', value.join(' ').split(''))
       });
         $("#user-photo").animate({opacity: 1}, 3000)
         $("#text").animate({opacity: 1}, 3000)
@@ -22,9 +21,9 @@ $(document).ready(function() {
 })
 
 
-function pMessage(target,text){
-  var jTarget = $(target).last();
-  for (var i = 0; i < text.length; i++) {
-      jTarget.append(text[i])
+function addInHaikuText(target,arrayOfWords){
+  var mostRecentSpan = $(target).last();
+  for (var i = 0; i < arrayOfWords.length; i++) {
+      mostRecentSpan.append(arrayOfWords[i])
   }
 }
