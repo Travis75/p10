@@ -59,7 +59,22 @@ span {
 }*/
 
 body{
-  background: gray;
+  background-image: url("../images/swirl_pattern.png");
+}
+
+#user-photo img{
+  margin-top: 2%;
+  margin-bottom:4%;
+  border: 10px solid black;
+  max-height: 250px;
+}
+
+#user-photo {
+  opacity: 0;
+}
+
+#text {
+  opacity: 0;
 }
 
 #holder {
@@ -90,6 +105,7 @@ input {
   border: 0px solid;
 }
 
+
 h2 {
   font-family: 'Josefin Slab', serif;
   -webkit-transform: rotate(-15deg);
@@ -107,4 +123,9 @@ h2 {
   width: 100%;
   margin-top: 10%;
   background-image: url("http://www.blackbambu.com/wp-content/uploads/2011/02/texture-4.1.jpg");
+}
+
+span {
+  margin-top: 4%;
+  font-size: 200%;
 }
