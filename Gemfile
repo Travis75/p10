@@ -18,11 +18,11 @@ gem 'rake'
 # gem 'debugger'
 gem 'shotgun'
 gem 'faker'
+gem 'rspec'
 gem 'httparty'
 # group :test do
 #   gem 'shoulda-matchers'
 #   gem 'rack-test'
-#   gem 'rspec'
 #   gem 'capybara'
 # end
 
