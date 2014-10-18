@@ -8,7 +8,7 @@ end
 get '/image_tag' do
   #stub_data = ["pavement", "nobody", "empty", "line", "stairs", "stride", "road", "house", "industry", "street", "shadow", "energy", "sidewalk", "perspective", "picker", "building", "row", "daytime", "urban", "roof"]
 
-  response = HTTParty.post('https://api.clarifai.com/v1/token/', query: {grant_type: "client_credentials", client_id: "K5NwdL1Kke7KlgO0PDGQL79wT93q12lpsVJOC6a5", client_secret: "JsQ4_FXp-d_7W01KrGhvKMKPMEJ0bnTLDbETkIop"})
+  response = HTTParty.post('https://api.clarifai.com/v1/token/', query: {grant_type: "client_credentials", client_id: ENV["CLIENT_ID"], client_secret: ENV["CLIENT_SECRET"]})
   token = response["access_token"]
   words = HTTParty.get("https://api.clarifai.com/v1/tag/?url=#{params[:image_url]}", headers: {"Authorization" => "Bearer #{token}"})
   finished_haiku = Haiku.new(words["results"][0]["result"]["tag"]["classes"])
