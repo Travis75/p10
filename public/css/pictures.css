@@ -67,6 +67,7 @@ body{
   margin-bottom:4%;
   border: 10px solid black;
   max-height: 25%;
+  max-width: 25%;
 }
 
 div p {
