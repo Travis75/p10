@@ -69,6 +69,15 @@ body{
   max-height: 25%;
 }
 
+div p {
+  text-align: center;
+  width: 20%;
+  position:absolute;
+  margin-top: 5%;
+  margin-left: 2%;
+  font-family: 'Josefin Slab', serif;
+}
+
 #user-photo {
   opacity: 0;
 }
